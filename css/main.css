@@ -6,6 +6,7 @@
 }
 .gallery {
     display: grid;
+    border: 1px solid purple;
     grid-template-columns: repeat(4, minmax(200px, 200px));
     grid-template-rows: 1fr;
     gap: 10px;
@@ -23,3 +24,28 @@
 .gallery-item_big {
     grid-area: 1 / 1/ 3 / 3 ;
 }
+
+.targeta{
+    display: grid;
+    border: 1px solid darkorange;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 3,1fr;
+    gap: 1rem;
+    margin: 00.1%;
+    padding: 5rem;
+    
+}
+.card{
+    color: white;
+}
+.card-body{
+    background-color: blueviolet;
+    height: 40;
+}
+.card-link{
+    color: black;
+}
+
+
+
+
