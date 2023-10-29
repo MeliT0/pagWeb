@@ -1,8 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Collegiate+One&family=Pacifico&family=Playpen+Sans&family=Red+Hat+Display:wght@300;400;500;600;700;900&family=Roboto+Flex:opsz,wght@8..144,300&family=Roboto:ital,wght@0,300;0,700;1,100&family=Shadows+Into+Light&display=swap');
+
 *{
     padding: 0%;
     margin: 0%;
     box-sizing: border-box;
+}
+.carousel-item{
+    transition-duration:  .1s;
+}
+.img_nav img{
+    width: 30px;
+    height: 30px;
 }
 .gallery {
     display: grid;
@@ -12,7 +20,6 @@
     gap: 10px;
     justify-content:center;
     margin: 25px 0;
-
 }
 
 .gallery-item {
@@ -48,6 +55,15 @@
 .carousel-img{
     height: 400px;
 }
+.imagenedu{
+    width: 200px;
+    height: 75px;
+}
+.header_edu {
+    margin-top: 50px;
+    padding: 20px;
+    background-image: linear-gradient(to right, #ffff, lightblue);
+}
 @media screen and (max-width: 768px) {
     .carousel-img{
         height: 250px;
@@ -56,6 +72,4 @@
 
 
 
-.header_edu {
-    background-image: linear-gradient(to right, #ffff, lightblue);
-}
+
