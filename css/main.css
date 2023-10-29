@@ -7,7 +7,7 @@
 .gallery {
     display: grid;
     border: 1px solid purple;
-    grid-template-columns: repeat(4, minmax(200px, 200px));
+    grid-template-columns: repeat(4, minmax(1fr));
     grid-template-rows: 1fr;
     gap: 10px;
     justify-content:center;
@@ -45,7 +45,14 @@
 .card-link{
     color: black;
 }
-
+.carousel-img{
+    height: 400px;
+}
+@media screen and (max-width: 768px) {
+    .carousel-img{
+        height: 250px;
+    }
+}
 
 
 
