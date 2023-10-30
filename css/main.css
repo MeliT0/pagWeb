@@ -25,27 +25,41 @@
     grid-area: 1 / 1/ 3 / 3 ;
 }
 
-.targeta{
-    display: grid;
-    border: 1px solid darkorange;
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: 3,1fr;
-    gap: 1rem;
-    margin: 00.1%;
-    padding: 5rem;
+.cardConteiner{
+    cursor: pointer;
+    transition: all 500ms;
+    position: relative;
+}
+.cardConteiner:hover{
+    transform: scale(1.02);
+}
+.cardImagen{
+    transition: all 500ms;
+    position: absolute;
+    top: 0;
+    left: 0;
     
 }
-.card{
-    color: white;
+.cardImagen:hover{
+    opacity: 0;
 }
-.card-body{
-    background-color: blueviolet;
-    height: 40;
+.card img {
+    width: 100%; 
+    height: 200px;
+    object-fit: cover; 
 }
-.card-link{
-    color: black;
+.cardsContainer{
+    display: flex;
+    margin: 10px 0;
+    gap: 20px;
+    padding: 0 20px;
+
 }
 
-
-
+@media (max-width: 768px){
+    .cardsContainer{
+        flex-direction: column;
+        margin: 10px auto;
+    }
+}
 
