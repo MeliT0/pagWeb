@@ -366,6 +366,93 @@
           </div>
         </div>
       </section>
+      <section >
+        <title>Contactanos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+
+        .contact-section {
+            background-color: #fff;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        .contact-form {
+            margin-top: 20px;
+        }
+
+        .contact-form label {
+            display: block;
+            font-weight: bold;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        .contact-form button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 3px;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        .contact-form button:hover {
+            background-color: #0056b3;
+        }
+
+        #thanks-message {
+            display: none;
+            color: #007bff;
+            font-weight: bold;
+        }
+
+        .contact-form input:valid + #thanks-message {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="contact-section">
+        <h2>Contactanos</h2>
+        <div class="contact-form">
+            <form id="first-form" action="https://form.jotform.com/233018644769868">
+                <div class="mb-3">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="mb-3">
+                    <label for="correo">Correo electrónico:</label>
+                    <input type="email" id="correo" name="correo" required>
+                </div>
+                <div class="mb-3">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+            <span id="thanks-message">¡Gracias por completar el formulario! <a href="https://tu-segundo-formulario.com">Ir al Segundo Formulario</a></span>
+        </div>
+    </div>
+      </section>
       <!-- Section: Images -->
     </div>
     <!-- Section: Social media -->
