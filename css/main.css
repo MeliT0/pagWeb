@@ -36,6 +36,7 @@
     cursor: pointer;
     transition: all 500ms;
     position: relative;
+    max-width: 32.3%;
 }
 .cardConteiner:hover{
     transform: scale(1.02);
@@ -93,6 +94,9 @@
     .cardsContainer{
         flex-direction: column;
         margin: 10px auto;
+    }
+    .cardConteiner{
+        max-width: 98%;
     }
 }
 
